@@ -1,0 +1,53 @@
+Circle
+Radius: 2
+Color: java.awt.Color[r=23,g=23,b=23]
+Figur fylt: true
+---------
+Rectangle
+Bredde: 4.0
+Lengde: 1.0
+Farge: java.awt.Color[r=120,g=120,b=120]
+Figur fylt: true
+Topp venstre: x is 2.0, y is 3.0
+Bunn høyre: x is 6.0, y is 2.0
+---------
+Square
+Side: 5.0
+Farge: java.awt.Color[r=40,g=40,b=40]
+Figur fylt: true
+Topp venstre: x is 10.0, y is 10.0
+Bunn høyre: x is 15.0, y is 5.0
+-------------
+Square
+Side: 1.0
+Farge: java.awt.Color[r=240,g=240,b=240]
+Figur fylt: true
+Topp venstre: x is 1.0, y is 2.0
+Bunn høyre: x is 2.0, y is 1.0
+-------------
+Circle
+Radius: 5
+Color: java.awt.Color[r=155,g=155,b=155]
+Figur fylt: true
+---------
+Circle
+Radius: 2
+Color: java.awt.Color[r=255,g=255,b=255]
+Figur fylt: false
+---------
+Rectangle
+Bredde: 2.0
+Lengde: 3.0
+Farge: java.awt.Color[r=220,g=220,b=220]
+Figur fylt: true
+Topp venstre: x is 2.0, y is 3.0
+Bunn høyre: x is 4.0, y is 0.0
+---------
+Rectangle
+Bredde: 12.0
+Lengde: 13.0
+Farge: java.awt.Color[r=23,g=23,b=23]
+Figur fylt: true
+Topp venstre: x is 2.0, y is 3.0
+Bunn høyre: x is 3.0, y is 4.0
+---------
