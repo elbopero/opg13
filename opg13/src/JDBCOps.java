@@ -18,7 +18,7 @@ public class JDBCOps {
     public int insertShape(String shape) {
         int dbShape = 0;
         try (Connection con = DriverManager
-                .getConnection("jdbc:mysql://localhost:3306/chill", "root", "tuttifrutti")) {
+                .getConnection("jdbc:mysql://localhost:3306/chill", removed, removed)) {
             dbShape = getShapeByName(shape);
             Statement stmt = con.createStatement();
             if (dbShape == 0) {
