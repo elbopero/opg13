@@ -39,7 +39,7 @@ public class JDBCOps {
 
     public boolean insertCircle(Shape circle) {
         try (Connection con = DriverManager
-                .getConnection("jdbc:mysql://localhost:3306/chill", "root", "tuttifrutti")) {
+                .getConnection("jdbc:mysql://localhost:3306/chill", "root", blank)) {
 
             PreparedStatement stmt = con.prepareStatement("insert into circle(x,y,filled,radius,color) VALUES(?,?,?,?,?)");
 
