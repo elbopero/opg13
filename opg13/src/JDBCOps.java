@@ -62,7 +62,7 @@ public class JDBCOps {
 
     public boolean insertRectangle(Shape rectangle) {
         try (Connection con = DriverManager
-                .getConnection("jdbc:mysql://localhost:3306/chill", "root", "tuttifrutti")) {
+                .getConnection("jdbc:mysql://localhost:3306/chill", "root", )) {
 
             PreparedStatement stmt = con.prepareStatement("insert into rectangle(x,y,filled,length,width,color) VALUES(?,?,?,?,?,?)");
 
@@ -87,7 +87,7 @@ public class JDBCOps {
 
     public boolean insertSquare(Shape square) {
         try (Connection con = DriverManager
-                .getConnection("jdbc:mysql://localhost:3306/chill", "root", "tuttifrutti")) {
+                .getConnection("jdbc:mysql://localhost:3306/chill", "root", )) {
 
             PreparedStatement stmt = con.prepareStatement("insert into square(x,y,filled,side,color) VALUES(?,?,?,?,?)");
 
@@ -112,7 +112,7 @@ public class JDBCOps {
    /* public boolean insertCircle(Circle circle){
        // Circle circle = (Circle) new Object();
         try(Connection con = DriverManager
-                .getConnection("jdbc:mysql://localhost:3306/chill", "root", "tuttifrutti")) {
+                .getConnection("jdbc:mysql://localhost:3306/chill", "root", )) {
             
                 Statement stmt = con.createStatement();
                 
@@ -131,7 +131,7 @@ public class JDBCOps {
         ArrayList<Shape> results = new ArrayList<>();
 
         try(Connection con = DriverManager
-                .getConnection("jdbc:mysql://localhost:3306/chill", "root", "tuttifrutti")){
+                .getConnection("jdbc:mysql://localhost:3306/chill", "root", )){
 
             Statement stmt = con.createStatement();
             String selectSql = "select width,length,x,y,filled,color from Rectangle";
@@ -201,7 +201,7 @@ public class JDBCOps {
 
     public Shape getShape(int id) {
         try(Connection con = DriverManager
-                .getConnection("jdbc:mysql://localhost:3306/chill", "root", "tuttifrutti")) {
+                .getConnection("jdbc:mysql://localhost:3306/chill", "root", )) {
 
             Statement stmt = con.createStatement();
             String selectShape = "select * from shape " +
@@ -224,7 +224,7 @@ public class JDBCOps {
 
     public int getShapeByName(String name) {
         try(Connection con = DriverManager
-                .getConnection("jdbc:mysql://localhost:3306/chill", "root", "tuttifrutti")) {
+                .getConnection("jdbc:mysql://localhost:3306/chill", "root", )) {
 
             Statement stmt = con.createStatement();
             String selectShape = "select * from shape " +
@@ -249,7 +249,7 @@ public class JDBCOps {
     public ArrayList<Circle> getAllCircles() {
         ArrayList<Circle> results = new ArrayList<>();
         try(Connection con = DriverManager
-                .getConnection("jdbc:mysql://localhost:3306/chill", "root", "tuttifrutti")) {
+                .getConnection("jdbc:mysql://localhost:3306/chill", "root",)) {
 
             Statement stmt = con.createStatement();
             String selectSql = "select * from shape";
@@ -278,7 +278,7 @@ public class JDBCOps {
 
     public ArrayList<Shape> getShapes() throws Exception {
         ArrayList<Shape> getshape = new ArrayList<>();
-        try (Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/chill", "root", "tuttifrutti")) {
+        try (Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/chill", "root",)) {
 
             PreparedStatement stmt = (PreparedStatement) con.prepareStatement("SELECT * from shape");
 
